@@ -1,9 +1,9 @@
-const {join} = require('path');
+const path = require('path');
 const http = require('http');
 const express = require('express');
-const socketIO = require('socket.io')
+const socketIO = require('socket.io');
 
-const publicPath = join(__dirname, '../public')
+const publicPath = path.join(__dirname, '../public');
 
 var app = express();
 var server = http.createServer(app);
